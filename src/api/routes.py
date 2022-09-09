@@ -30,7 +30,7 @@ def Signup():
      user = User(email=body['email'], password = hashed_password, name=body['name'], is_client=body['is_client'])
      
      if body["is_client"]==False:
-        taller = Taller(w_name=body['w_name'], w_address=body['w_address'], lat=body['lat'], lng=body["lng"])
+        taller = Taller(w_name=body['w_name'], w_address=body['w_address'], lat=float(body['lat']), lng=float(body["lng"]))
         user.taller = taller
 
      db.session.add(user)
@@ -134,6 +134,8 @@ def post_profile():
             taller.w_name = body["w_name"]
         if len(body["w_address"]) > 6:
             taller.w_address = body["w_address"]
+            taller.lat = float(body["lat"])
+            taller.lng = float(body["lng"])
     
         if taller is not None:
             taller_data = taller.serialize()

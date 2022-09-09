@@ -28,6 +28,18 @@ function Mapcomponent({ center }) {
         center={{ lat: 40.420177, lng: -3.703928 }}
         zoom={6}
       >
+        {store.map_markers[0].w_name==="EMPTY" ? (<Marker
+            label={{
+              text: "Cargando...",
+              fontSize: "1.23rem",
+              marginTop: "2rem",
+              fontWeight: "bold",
+              color: "black",
+              className: "marker-label t-shadow-black-marker",
+            }}
+            icon={markerimage}
+            position={{ lat: 40.420177, lng: -3.703928 }}
+          />) : null}
         {!store.loggedIn ? (
           <Marker
             label={{
