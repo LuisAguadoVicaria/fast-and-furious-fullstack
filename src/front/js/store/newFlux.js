@@ -238,7 +238,7 @@ const useFlux = () => {
           const data = await resp.json();
           if (data.msg === "ok") {
             navigate("/login", { replace: true });
-            setStore({ alert: "Registrado correctamente" });
+            setStore({ alert: "Registrado correctamente", loggedIn: true });
             return null;
           }
         } catch (error) {

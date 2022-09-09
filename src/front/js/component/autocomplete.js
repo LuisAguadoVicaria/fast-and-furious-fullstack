@@ -16,12 +16,12 @@ function Placecomplete({ value }) {
     return (window.Autocomplete = ref);
   };
   const onPlacesChanged = () => {
-    //console.log(window.Autocomplete.gm_bindings_.fields[13].Zj.place); // TO BD
+    //console.log(window.Autocomplete); // TO BD
     setLat(
-      window.Autocomplete.gm_bindings_.fields[13].Zj.place.geometry.location.lat()
+      window.Autocomplete.gm_bindings_.fields[13].ck.place.geometry.location.lat()
     );
     setLng(
-      window.Autocomplete.gm_bindings_.fields[13].Zj.place.geometry.location.lng()
+      window.Autocomplete.gm_bindings_.fields[13].ck.place.geometry.location.lng()
     );
   };
   return (
