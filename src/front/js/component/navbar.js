@@ -64,7 +64,7 @@ export const Navbar = () => {
 
               {store.loggedIn ? (
                 <a
-                  className="rounded  m-2  shadow-none nav-link"
+                  className="rounded m-2 px-2 shadow-none nav-link"
                   onClick={() => actions.removeToken()}
                 >
                   <i className="fa-solid fa-arrow-right-from-bracket fs-4 me-3"></i>
@@ -75,8 +75,8 @@ export const Navbar = () => {
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded  m-2 px-2 nav-link btn btn-secondary shadow-none text-black text-start"
-                    : "rounded  m-2 px-2 shadow-none nav-link"
+                    ? "rounded m-2 px-2 nav-link btn btn-secondary shadow-none text-black text-start"
+                    : "rounded m-2 px-2 shadow-none nav-link"
                 }
               >
                 <i className="fa-solid fa-circle-question fs-4 me-3"></i>Ayuda

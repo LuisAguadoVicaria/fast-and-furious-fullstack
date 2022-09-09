@@ -190,7 +190,7 @@ export const Contact = () => {
                 src="https://avatars.githubusercontent.com/u/70114505?v=4"
               />
               <h2 className="fs-4 mb-4 t-shadow-black text-white">Luis</h2>
-              <em className="home-shadow py-3 m-4 d-block text-white">
+              <em className="home-shadow p-3 m-4 d-block text-white">
                <q>Convirtiéndome en Pull Walker. Las classes lo son todo.</q> 
               </em>
               <i className="fa-brands fs-3 title-header text-white mb-5 t-shadow fa-github" />
@@ -216,7 +216,7 @@ export const Contact = () => {
                 src="http://avatars.githubusercontent.com/u/104210758?v=4"
               />
               <h2 className="fs-4 mb-4 t-shadow-black text-white">Jesús</h2>
-              <em className="home-shadow py-3 m-4 d-block text-white">
+              <em className="home-shadow p-3 m-4 d-block text-white">
                <q>De 'null' a 'full stack developer' gracias 4Geeks</q> 
               </em>
               <i className="fa-brands fs-3 title-header text-white  t-shadow fa-github" />
@@ -242,7 +242,7 @@ export const Contact = () => {
                 src="https://avatars.githubusercontent.com/u/104069050?s=400&u=86d6a22ab542ce8cbaac0cff04417a1e666d67a1&v=4"
               />
               <h2 className="fs-4 mb-4 t-shadow-black text-white">Antonio</h2>
-              <em className="home-shadow py-3 m-4 d-block text-white">
+              <em className="home-shadow p-3 m-4 d-block text-white">
                <q>Un programador al nacer no llora, dice 'Hola Mundo' </q> 
               </em>
               <i className="fa-brands fs-3 title-header text-white mb-5 t-shadow fa-github" />
