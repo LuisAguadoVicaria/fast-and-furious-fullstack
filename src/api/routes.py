@@ -134,6 +134,7 @@ def post_profile():
             taller.w_name = body["w_name"]
         if len(body["w_address"]) > 6:
             taller.w_address = body["w_address"]
+        if body["lat"] is not None and body["lng"] is not None:
             taller.lat = float(body["lat"])
             taller.lng = float(body["lng"])
     

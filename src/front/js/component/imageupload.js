@@ -5,12 +5,14 @@ import { useAppContext } from "../index";
 export const ImageUp = () => {
   const { store, actions, setStore } = useAppContext();
   const [file, setFile] = useState(null);
+  const [loading, setLoading] = useState(false)
   const handleChange = (e) => {
     setFile(e.target.files[0]);
     setFile(URL.createObjectURL(e.target.files[0]));
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
     try {
       // fetching data from the backend
       const resp = await fetch(process.env.BACKEND_URL + "/upload", {
@@ -22,13 +24,16 @@ export const ImageUp = () => {
       });
       const data = await resp.json();
       if (data.msg === "ok") {
+        setLoading(false)
         return setStore({ alert: "Imagen Actualizada" }); //Reset user data
       }
     } catch (error) {
+      setLoading(false)
       return setStore({
         alert: "Error al actualizar la imagen",
       });
     }
+    setLoading(false)
     return setStore({
       alert: "Error Actualizar Imagen desconocido",
     });
@@ -57,6 +62,17 @@ export const ImageUp = () => {
         </div>
       </form>
       <div className="text-center">
+      {!loading ? null : (
+              <div className="w-100">
+                {" "}
+                <div
+                  className="mb-4 text-success spinner-border spinner-border-sm"
+                  role="status"
+                >
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            )}
         {
           <img
             className="rounded shadow figure"

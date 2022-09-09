@@ -161,7 +161,7 @@ const useFlux = () => {
           if (data.msg === "ok") {
             return setStore({
               alert: (
-                <Link to={"/new/password/" + btoa(data.token)}>EMAIL LINK</Link>
+                <>Comprueba tu bandeja de correo.<br/> Dev: <Link to={"/new/password/" + btoa(data.token)}>EMAIL LINK</Link></>
               ),
             });
           }
