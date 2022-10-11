@@ -5,7 +5,7 @@
 ><code>pipenv run reset_db</code>
 ><code>pipenv run dbdummy</code>
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#prebuild/https://github.com/LuisAguadoVicaria/fast-and-furious-fullstack)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#prebuild/https://github.com/LuisAguadoVicaria/fast-and-furious-fullstack)
 
 > Documentation: https://start.4geeksacademy.com/
 > Updated: React, Router, Prop-Types

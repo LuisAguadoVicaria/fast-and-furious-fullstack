@@ -19,6 +19,7 @@ cloudinary = "*"
 flask-admin = "*"
 flask-jwt-extended = "*"
 mailjet-rest = "*"
+importlib-resources = "*"
 
 [requires]
 python_version = "*"
